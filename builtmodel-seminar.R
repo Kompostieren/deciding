@@ -5,8 +5,6 @@ library(DiagrammeR)
 
 ##hello there
 ##This is a seminar assignment, but very interesting
-#jkhgihkjn
-#dghdrth
 
 
 ##1
