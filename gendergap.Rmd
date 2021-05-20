@@ -1,0 +1,59 @@
+---
+title: "Gender Gap in German Agriculture"
+author: "Alina Gombert"
+date: "19 5 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+Most people think of a male Person when imagining a farmer. 
+
+Who is responsible for the gender gap in Agruiculture?
+
+936,900 people work on farms in Germany. 
+36 % of all agricultural workers are female. 
+33 % of family workers, 
+32 % of permanent employees, 
+43 % of seasonal workers, 
+11 % of farm managers
+= most woman in agriculture are not farm managers
+
+Woman in agriculture are often not in the position the decide
+50 % of women make farm decisions jointly with their partner.
+30 % are involved in decision-making, but the partner has the final say. 
+10 % said they have no influence at all on farm decisions. 
+
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars, echo = FALSE}
+
+library(DiagrammeR)
+
+
+mermaid("graph LR
+        Y(Tradition)-->I(FArm); linkStyle 0 stroke:green, stroke-width:1.5px
+        M(Cliche)-->I; linkStyle 1 stroke: green, stroke-width:1.5px
+        I-->F(Woman in Agriculture); linkStyle 2 stroke: green, stroke-width:1.5px
+        CL(Credibility)-->F; linkStyle 3 stroke: red, stroke-width:1.5px
+        CM(Access)-->F; linkStyle 4 stroke: red, stroke-width:2.5px")
+
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
